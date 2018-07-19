@@ -1,0 +1,10 @@
+version: '3'
+services:
+  trippy:
+    build: .
+    ports:
+      - '8080:8080'
+    command: nodemon
+    volumes:
+      - .:/home/app
+      - /home/app/node_modules
